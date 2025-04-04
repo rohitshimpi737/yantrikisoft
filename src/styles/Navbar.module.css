@@ -1,0 +1,80 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scrolled {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  font-size: 20px;  
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333131;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.navLinks li a:hover {
+  color: #0073e6;
+}
+
+/* Modernized Contact Us Button */
+.contactUs a {
+  display: flex;
+  align-items: center;
+  background: #0073e6;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.contactUs a:hover {
+  transform: scale(1.05);
+  background: #005bb5;
+}
+
+.arrowIcon {
+  margin-left: 10px;
+  font-size: 14px;
+}

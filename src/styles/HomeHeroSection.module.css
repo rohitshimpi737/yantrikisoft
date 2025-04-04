@@ -1,0 +1,98 @@
+.heroSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 70px;
+  margin: 20px auto 0px;
+}
+
+.container {
+  display: flex;
+  align-items: stretch; 
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textContent {
+  flex: 1.1;
+  max-width: 55%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.textContent h1 {
+  font-size: 50px; 
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.textContent p {
+  font-size: 18px; 
+  color: #555;
+  white-space: pre-line;
+
+}
+
+.ctaButton {
+  background: #ffa500;
+  color: #fff;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: 60px;
+}
+
+.ctaButton:hover {
+  background: #e68900;
+}
+
+.imageContainer {
+  flex: 0.9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.imageContainer img {
+  max-width: 80%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .textContent {
+    max-width: 100%;
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ctaButton {
+    align-self: center;
+  }
+
+  .imageContainer {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .imageContainer img {
+    max-width: 90%;
+  }
+}

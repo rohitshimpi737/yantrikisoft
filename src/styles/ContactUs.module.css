@@ -1,0 +1,89 @@
+.contactSection {
+  text-align: center;
+  padding: 100px 50px;
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.description {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  align-items: flex-start;
+}
+
+.contactForm {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.contactForm textarea {
+  height: 160px;
+}
+
+.flexInputs {
+  display: flex;
+  gap: 20px;
+}
+
+.flexInputs input {
+  flex: 1;
+}
+
+.submitButton {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #333;
+}
+
+.mapContainer {
+  flex: 1;
+  max-width: 700px;
+  height: 450px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
