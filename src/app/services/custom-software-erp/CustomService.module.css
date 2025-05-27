@@ -1,0 +1,21 @@
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff; /* Optional: set a global background */
+}
+
+/* Optional: spacing between sections */
+.main > *:not(:last-child) {
+  margin-bottom: 80px; 
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 768px) {
+  .main > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}

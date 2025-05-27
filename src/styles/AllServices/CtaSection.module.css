@@ -1,0 +1,69 @@
+.section {
+  background-color: #2563eb; /* Tailwind's bg-primary */
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .flexBox {
+    flex-direction: row;
+  }
+}
+
+.content {
+  margin-bottom: 2rem;
+  max-width: 48rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-bottom: 0;
+  }
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 550px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #2563eb;
+  padding: 1rem 2rem;
+  border-radius: 10px; /* Fully rounded */
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 2px transparent;
+  border: none;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 2px #ffffff;
+  transform: translateY(-2px);
+  background-color: #f9fafb; /* Very light hover */
+}
+

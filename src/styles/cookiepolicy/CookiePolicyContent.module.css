@@ -1,0 +1,171 @@
+/* Add this to your global CSS or module CSS */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+.policyContent {
+  flex: 1 1 0%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.sectionHeader h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #4361ee;
+  font-size: 2rem;
+  background: #f8f9fe;
+  border-radius: 12px;
+}
+
+.iconSm {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #4361ee;
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+  background: #f8f9fe;
+  border-radius: 8px;
+  padding: 0.25rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e9ecef;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stack > div {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e9ecef;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.stack h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.infoNote {
+  background: #f0f7ff;
+  border-left: 4px solid #4361ee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.infoNote h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.policyContent ul {
+  padding-left: 1.5rem;
+}
+
+.policyContent li {
+  margin-bottom: 0.5rem;
+}
+
+.policyContent p,
+.policyContent li {
+  font-size: 1.05rem;
+  color: #4a5568;
+}
+
+.policyContent a {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.policyContent a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .policyContent {
+    padding: 1.5rem;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+}

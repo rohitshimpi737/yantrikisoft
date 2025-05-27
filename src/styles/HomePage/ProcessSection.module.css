@@ -1,0 +1,117 @@
+.processSection {
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border: 1px solid #f3f4f6;
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stepCircle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #3b82f6; /* primary color */
+  border-radius: 9999px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.stepDescription {
+  color: #4b5563;
+  line-height: 1.625rem;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .stepCircle {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .stepTitle {
+    font-size: 1.125rem;
+  }
+
+  .stepDescription {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .stepCircle {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .stepTitle {
+    font-size: 1.1rem;
+  }
+
+  .stepDescription {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,151 @@
+.techSection {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.techContainer {
+  display: flex;
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Left Panel - Tech Stack Names */
+/* .stackList {
+  width: 450px;
+  background: #1a2b48;
+  color: white;
+  padding: 20px 0;
+  overflow-y: auto;
+  max-height: 400px;
+  scrollbar-width: thin;
+} */
+.stackList {
+  width: 450px;
+  background: #1a2b48;
+  color: white;
+  padding: 20px 0;
+  overflow-y: auto;
+  max-height: 400px;
+  scrollbar-width: thin;
+  scrollbar-color: #4a5c78 #1a2b48;
+}
+
+.stackScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stackItem {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.stackItem:hover,
+.stackItem.active {
+  background: #2f436e;
+}
+
+/* Right Panel - Technologies */
+.techDetails {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  gap: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 400px; /* Fixed height */
+}
+
+/* .techItem {
+  background: #f1f1f1;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} */
+
+/* Updated techItem for alignment */
+.techItem {
+  background: #f1f1f1;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  margin-right: 10px; /* Added space before the image on the right */
+}
+
+.whiteIcon {
+  filter: invert(1) brightness(2); /* Converts black to white */
+}
+/* Custom Scrollbar for WebKit Browsers */
+.stackList::-webkit-scrollbar {
+  width: 4px; /* Even thinner width */
+  height: 4px;
+}
+
+.stackList::-webkit-scrollbar-track {
+  background: #1a2b48;
+  border-radius: 0; /* Remove track rounding */
+}
+
+.stackList::-webkit-scrollbar-thumb {
+  background: #4a5c78;
+  border-radius: 4px;
+  border: none; /* Remove border entirely */
+  max-height: 30px; /* Significantly shorter thumb */
+}
+
+.stackList::-webkit-scrollbar-thumb:hover {
+  background: #60789a;
+}
+
+/* Hide scrollbar buttons - more aggressive approach */
+.stackList::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Hide corner */
+.stackList::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* For Firefox */
+.stackList {
+  scrollbar-width: thin; /* "thin" is the thinnest option in Firefox */
+  scrollbar-color: #4a5c78 #1a2b48;
+}

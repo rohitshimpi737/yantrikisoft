@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Yantrikisoft</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Rubik', Arial, sans-serif;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section-title {
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .toc-link {
+            transition: all 0.3s ease;
+        }
+        .toc-link:hover {
+            color: #3b82f6;
+            transform: translateX(4px);
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        @media print {
+            .back-to-top, .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-10">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary">Yantrikisoft</a>
+            <div class="flex items-center gap-4">
+                <button class="print-btn flex items-center gap-2 text-gray-600 hover:text-primary transition-colors" onclick="window.print()">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-printer-line"></i>
+                    </div>
+                    <span class="hidden sm:inline">Print</span>
+                </button>
+                <button class="flex items-center gap-2 text-white bg-primary hover:bg-primary/90 px-4 py-2 !rounded-button whitespace-nowrap transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-download-line text-white"></i>
+                    </div>
+                    <span class="hidden sm:inline">Download PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/4 sticky top-24 self-start hidden md:block">
+                <div class="bg-white p-6 rounded shadow-sm">
+                    <h2 class="font-medium text-lg mb-4 text-gray-800">Table of Contents</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#introduction" class="toc-link block text-gray-600 hover:text-primary">1. Introduction</a></li>
+                        <li><a href="#acceptance" class="toc-link block text-gray-600 hover:text-primary">2. Acceptance of Terms</a></li>
+                        <li><a href="#services" class="toc-link block text-gray-600 hover:text-primary">3. Services Provided</a></li>
+                        <li><a href="#responsibilities" class="toc-link block text-gray-600 hover:text-primary">4. User Responsibilities</a></li>
+                        <li><a href="#privacy" class="toc-link block text-gray-600 hover:text-primary">5. Privacy Policy</a></li>
+                        <li><a href="#intellectual" class="toc-link block text-gray-600 hover:text-primary">6. Intellectual Property</a></li>
+                        <li><a href="#third-party" class="toc-link block text-gray-600 hover:text-primary">7. Third-Party Links</a></li>
+                        <li><a href="#liability" class="toc-link block text-gray-600 hover:text-primary">8. Limitation of Liability</a></li>
+                        <li><a href="#termination" class="toc-link block text-gray-600 hover:text-primary">9. Termination</a></li>
+                        <li><a href="#governing" class="toc-link block text-gray-600 hover:text-primary">10. Governing Law</a></li>
+                        <li><a href="#changes" class="toc-link block text-gray-600 hover:text-primary">11. Changes to Terms</a></li>
+                        <li><a href="#contact" class="toc-link block text-gray-600 hover:text-primary">12. Contact Information</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="md:w-3/4 bg-white p-8 rounded shadow-sm">
+                <h1 class="text-3xl font-medium text-gray-900 mb-6">Terms and Conditions</h1>
+                <p class="text-gray-500 mb-8">Last Updated: May 11, 2025</p>
+                <section id="introduction" class="mb-8">
+                    <h2 class="section-title">1. Introduction</h2>
+                    <p class="mb-4">Welcome to Yantrikisoft's website. These Terms and Conditions govern your access to and use of Yantrikisoft's website, services, and applications (collectively, the "Services"). By accessing or using our Services, you agree to be bound by these Terms and Conditions.</p>
+                    <p>Please read these Terms and Conditions carefully before using our Services. If you do not agree with any part of these terms, you may not access or use our Services.</p>
+                </section>
+
+                <section id="acceptance" class="mb-8">
+                    <h2 class="section-title">2. Acceptance of Terms</h2>
+                    <p class="mb-4">By accessing or using Yantrikisoft's website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions, as well as our Privacy Policy.</p>
+                    <p class="mb-4">These Terms and Conditions constitute a legally binding agreement between you and Yantrikisoft. If you are using our Services on behalf of a company, organization, or other entity, you represent and warrant that you have the authority to bind that entity to these Terms and Conditions.</p>
+                    <p>We reserve the right to modify these Terms and Conditions at any time. Your continued use of our Services following any changes constitutes your acceptance of the revised Terms and Conditions.</p>
+                </section>
+
+                <section id="services" class="mb-8">
+                    <h2 class="section-title">3. Services Provided</h2>
+                    <p class="mb-4">Yantrikisoft provides various technology solutions and services, including but not limited to:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li>UI/UX Design</li>
+                        <li>Content Writing</li>
+                        <li>Digital Marketing</li>
+                        <li>Web Development</li>
+                        <li>Mobile App Development</li>
+                        <li>AI Development</li>
+                        <li>Custom Software & ERP Development</li>
+                        <li>Immersive Technology Services</li>
+                    </ul>
+                    <p class="mb-4">All services provided by Yantrikisoft are governed by these Terms and Conditions, as well as any additional terms and agreements specific to particular services or projects.</p>
+                    <p>Yantrikisoft reserves the right to modify, suspend, or discontinue any of its services at any time without prior notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuation of our services.</p>
+                </section>
+
+                <section id="responsibilities" class="mb-8">
+                    <h2 class="section-title">4. User Responsibilities</h2>
+                    <h3 class="font-medium text-lg mb-2 mt-4">4.1 Account Creation and Security</h3>
+                    <p class="mb-4">When creating an account with Yantrikisoft, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify Yantrikisoft immediately of any unauthorized use of your account or any other breach of security.</p>
+                    
+                    <h3 class="font-medium text-lg mb-2 mt-4">4.2 Content Posting</h3>
+                    <p class="mb-4">You are solely responsible for any content you post, upload, or otherwise transmit through our Services. You agree that you will not post content that:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li>Infringes on the intellectual property rights of others</li>
+                        <li>Contains defamatory, obscene, or offensive material</li>
+                        <li>Violates any applicable laws or regulations</li>
+                        <li>Contains viruses, malware, or other harmful code</li>
+                        <li>Impersonates any person or entity</li>
+                    </ul>
+                    
+                    <h3 class="font-medium text-lg mb-2 mt-4">4.3 Prohibited Use</h3>
+                    <p class="mb-4">You agree not to use our Services for any unlawful purpose or in any way that could damage, disable, overburden, or impair our servers or networks. Prohibited activities include but are not limited to:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li>Attempting to gain unauthorized access to any part of our Services</li>
+                        <li>Engaging in any form of automated data collection without Yantrikisoft's prior consent</li>
+                        <li>Using our Services to transmit spam or other unsolicited communications</li>
+                        <li>Interfering with other users' enjoyment of our Services</li>
+                        <li>Using our Services in connection with any illegal activities</li>
+                    </ul>
+                </section>
+
+                <section id="privacy" class="mb-8">
+                    <h2 class="section-title">5. Privacy Policy</h2>
+                    <p class="mb-4">Your privacy is important to us. Our Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Services. By using our Services, you consent to the data practices described in our Privacy Policy.</p>
+                    <p>Our Privacy Policy is incorporated into these Terms and Conditions by reference. Please review our <a href="#" class="text-primary hover:underline">Privacy Policy</a> for more information on how we handle your personal data.</p>
+                </section>
+
+                <section id="intellectual" class="mb-8">
+                    <h2 class="section-title">6. Intellectual Property</h2>
+                    <p class="mb-4">All content on Yantrikisoft's website, including but not limited to text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, is the property of Yantrikisoft or its licensors and is protected by international copyright, trademark, and other intellectual property laws.</p>
+                    <p class="mb-4">You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without the prior written consent of Yantrikisoft.</p>
+                    <p class="mb-4">Yantrikisoft's name, logo, and all related names, logos, product and service names, designs, and slogans are trademarks of Yantrikisoft or its affiliates. You may not use such marks without the prior written permission of Yantrikisoft.</p>
+                    <p>Any feedback, comments, or suggestions you may provide regarding our Services is entirely voluntary, and we will be free to use such feedback, comments, or suggestions without any obligation to you.</p>
+                </section>
+
+                <section id="third-party" class="mb-8">
+                    <h2 class="section-title">7. Third-Party Links</h2>
+                    <p class="mb-4">Our Services may contain links to third-party websites or services that are not owned or controlled by Yantrikisoft. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</p>
+                    <p class="mb-4">You acknowledge and agree that Yantrikisoft shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.</p>
+                    <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.</p>
+                </section>
+
+                <section id="liability" class="mb-8">
+                    <h2 class="section-title">8. Limitation of Liability</h2>
+                    <p class="mb-4">To the maximum extent permitted by applicable law, Yantrikisoft and its directors, employees, partners, agents, suppliers, or affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li>Your access to or use of or inability to access or use our Services</li>
+                        <li>Any conduct or content of any third party on our Services</li>
+                        <li>Any content obtained from our Services</li>
+                        <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+                    </ul>
+                    <p class="mb-4">In no event shall Yantrikisoft's total liability to you for all claims, damages, losses, and causes of action exceed the amount paid by you, if any, for accessing or using our Services during the six (6) months prior to bringing such claim.</p>
+                    <p>The limitations of liability set forth above are fundamental elements of the basis of the bargain between Yantrikisoft and you.</p>
+                </section>
+
+                <section id="termination" class="mb-8">
+                    <h2 class="section-title">9. Termination</h2>
+                    <p class="mb-4">Yantrikisoft reserves the right to terminate or suspend your access to our Services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms and Conditions.</p>
+                    <p class="mb-4">Upon termination, your right to use our Services will immediately cease. If you wish to terminate your account, you may simply discontinue using our Services or contact us to request account deletion.</p>
+                    <p>All provisions of these Terms and Conditions which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+                </section>
+
+                <section id="governing" class="mb-8">
+                    <h2 class="section-title">10. Governing Law</h2>
+                    <p class="mb-4">These Terms and Conditions shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.</p>
+                    <p class="mb-4">Any disputes arising under or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts located in Pune, India.</p>
+                    <p>You agree to submit to the personal jurisdiction of the courts located in Pune, India, for the purpose of litigating all such claims or disputes.</p>
+                </section>
+
+                <section id="changes" class="mb-8">
+                    <h2 class="section-title">11. Changes to Terms</h2>
+                    <p class="mb-4">Yantrikisoft reserves the right, at its sole discretion, to modify or replace these Terms and Conditions at any time. We will provide notice of any changes by posting the new Terms and Conditions on this page and updating the "Last Updated" date at the top of this page.</p>
+                    <p class="mb-4">Your continued use of our Services after any such changes constitutes your acceptance of the new Terms and Conditions. If you do not agree to the new terms, please stop using our Services.</p>
+                    <p>We encourage you to review these Terms and Conditions periodically for any changes. Changes to these Terms and Conditions are effective when they are posted on this page.</p>
+                </section>
+
+                <section id="contact" class="mb-8">
+                    <h2 class="section-title">12. Contact Information</h2>
+                    <p class="mb-4">If you have any questions about these Terms and Conditions, please contact us at:</p>
+                    <div class="bg-gray-50 p-6 rounded">
+                        <p class="mb-2"><strong>Yantrikisoft Technologies Pvt. Ltd.</strong></p>
+                        <p class="mb-2">Office No. 305, 3rd Floor, Pride Icon</p>
+                        <p class="mb-2">Kharadi, Pune - 411014</p>
+                        <p class="mb-2">Maharashtra, India</p>
+                        <p class="mb-2">Email: <a href="mailto:legal@yantrikisoft.com" class="text-primary hover:underline">legal@yantrikisoft.com</a></p>
+                        <p>Phone: +91 20 4862 5000</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Yantrikisoft</h3>
+                    <p class="text-gray-300 mb-4">Providing innovative technology solutions since 2010.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-facebook-fill"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-linkedin-fill"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-2">
+                                <i class="ri-map-pin-line text-gray-300"></i>
+                            </div>
+                            <span class="text-gray-300">Kharadi, Pune - 411014, India</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-2">
+                                <i class="ri-mail-line text-gray-300"></i>
+                            </div>
+                            <span class="text-gray-300">info@yantrikisoft.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-2">
+                                <i class="ri-phone-line text-gray-300"></i>
+                            </div>
+                            <span class="text-gray-300">+91 20 4862 5000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Yantrikisoft Technologies Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top bg-primary text-white p-3 rounded-full shadow-lg !rounded-button whitespace-nowrap transition-all">
+        <div class="w-5 h-5 flex items-center justify-center">
+            <i class="ri-arrow-up-line"></i>
+        </div>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const tocLinks = document.querySelectorAll('.toc-link');
+            
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

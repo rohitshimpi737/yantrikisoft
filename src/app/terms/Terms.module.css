@@ -1,0 +1,96 @@
+/* PrivacyPolicy.module.css */
+.bg {
+  background: #f8f9fe;
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+  text-align: left;
+  background: linear-gradient(to bottom, #ffffff 0%, #f8f9fe 100%);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.updated {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 1.75rem;
+  font-weight: 400;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin-bottom: 0;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  gap: 3rem;
+}
+
+@media (min-width: 900px) {
+  .contentWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
+  
+  .header {
+    padding: 5rem 2rem 3rem;
+  }
+}
+
+.navWrapper {
+  min-width: 240px;
+  max-width: 280px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 140px;
+  align-self: flex-start;
+  height: fit-content;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  flex: 1 1 0%;
+  min-width: 0;
+  padding-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 1.25rem 2rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .intro {
+    font-size: 1.1rem;
+  }
+}

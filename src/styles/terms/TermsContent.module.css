@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+.termsContent {
+  flex: 1 1 0%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1.25rem 0;
+}
+
+.subTitle {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #2563eb;
+  margin: 1.25rem 0 0.75rem 0;
+}
+
+.list {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #4a5568;
+}
+
+.termsContent p,
+.termsContent li {
+  font-size: 1.05rem;
+  color: #4a5568;
+}
+
+.link {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.contactBox {
+  background: #f8f9fe;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+  color: #2c3e50;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .termsContent {
+    padding: 1.5rem;
+  }
+  .sectionTitle {
+    font-size: 1.35rem;
+  }
+}

@@ -1,5 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Shared/Navbar";
+import Footer from "@/components/Shared/Footer";
+import BackToTopButton from "@/components/Shared/BackToTopButton";
 import "../styles/globals.css";
  
 export default function RootLayout({
@@ -13,7 +14,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        </body>
+        <BackToTopButton />
+      </body>
     </html>
   );
 }

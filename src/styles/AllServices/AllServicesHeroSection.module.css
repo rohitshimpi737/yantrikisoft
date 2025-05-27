@@ -1,0 +1,127 @@
+.heroSection {
+  position: relative;
+  background-image: url('https://readdy.ai/api/search-image?query=modern%20office%20interior%20with%20glass%20walls%20and%20workstations%2C%20natural%20lighting%2C%20minimalist%20design%2C%20tech%20company%20workspace%20with%20clean%20lines%20and%20professional%20atmosphere%2C%20high%20end%20corporate%20environment&width=1920&height=1080&seq=hero1&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 1.5rem 5rem;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgb(7, 10, 18), rgba(8, 16, 33, 0.9), rgba(37, 99, 235, 0.8));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  margin-left: 75px;
+  max-width: 640px;
+  color: white;
+}
+
+.content h1 {
+  font-size: 6rem;
+  font-weight: 1000;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.primaryBtn {
+  background-color: white;
+  color: #2563eb;
+  padding: 0.75rem 1.5rem;
+  font-weight: 900;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #f3f4f6;
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 900;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 640px) {
+  .content {
+    text-align: left;
+    margin-left: 75px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.25rem;
+  }
+}
+/* Mobile view adjustments */
+@media (max-width: 640px) {
+  .heroSection {
+    padding: 4rem 1rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+}

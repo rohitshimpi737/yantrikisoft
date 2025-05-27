@@ -1,0 +1,87 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  padding: 7rem 0 0;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, white, rgba(255, 255, 255, 0.9), transparent),
+    url("https://readdy.ai/api/search-image?query=modern%20business%20team%20collaboration%20with%20diverse%20professionals%20in%20a%20bright%20modern%20office%2C%20stylish%20business%20attire%2C%20professional%20setting%2C%20clean%20bright%20background%20on%20the%20left%20side%20fading%20to%20show%20people%20on%20right%20side%2C%20high%20quality%20professional%20corporate%20image&width=1400&height=600&seq=1&orientation=landscape");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 20px;
+  /* padding: 0 1.5rem; */
+}
+
+.textContainer {
+  width: 100%;
+  max-width: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background-color: #0066CC;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.primaryButton:hover {
+  background-color: #2579cd;
+}
+
+.secondaryButton {
+  background-color: white;
+  color: #0066CC;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid #0066CC;
+  transition: background-color 0.2s;
+}
+
+.secondaryButton:hover {
+  background-color: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 0;
+  }
+
+  .textContainer {
+    max-width: 100%;
+  }
+}

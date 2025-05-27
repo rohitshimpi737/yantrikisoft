@@ -1,0 +1,32 @@
+.backToTop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: var(--primary, #3b82f6);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1200;
+  cursor: pointer;
+}
+
+.backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.backToTop:hover,
+.backToTop:focus {
+  background: #2563eb;
+  outline: none;
+}

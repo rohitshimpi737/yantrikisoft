@@ -1,0 +1,85 @@
+.notableClients {
+  text-align: center;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.clientGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.clientLogoWrapper {
+  flex: 1 1 200px;
+  max-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default image styling */
+.clientLogo {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* Optional custom size tweaks (if some logos are disproportionate) */
+.sagaWood {
+  max-width: 260px;
+}
+
+.jcd {
+  max-width: 240px;
+}
+
+.chain2bollywood {
+  max-width: 220px;
+}
+
+.hindconnect {
+  max-width: 220px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .clientGrid {
+    gap: 40px;
+  }
+
+  .clientLogoWrapper {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .clientGrid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .clientLogoWrapper {
+    max-width: 180px;
+  }
+}

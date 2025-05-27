@@ -1,0 +1,120 @@
+.section {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #f9fafb, rgba(191, 219, 254, 0.5));
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* Optional: maintain a bit of padding inside container */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #dbeafe;
+  color: #2563eb;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;       /* Equivalent to 18px */
+  color: #4b5563;            /* Tailwind's text-gray-600 */
+  line-height: 1.75rem;      /* Match readable spacing (1.5x line height) */
+  max-width: 36rem;          /* Slightly wider for cleaner line breaks */
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  word-break: keep-all;      /* Prevent awkward word splits */
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px) scale(1.02);
+}
+
+
+
+.icon {
+  color: #2563eb;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Changed from 'start' to 'flex-start' */
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.cardText {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cardLink:hover {
+  transform: translateX(0.25rem);
+  text-decoration: underline;
+}

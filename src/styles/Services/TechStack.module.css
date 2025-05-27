@@ -1,0 +1,105 @@
+.techStack {
+  padding: 0 4rem 4rem;
+  background-color: #f9fbfc;
+  text-align: left; /* Align text to the left */
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center; /* Left align the heading */
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start; /* Align tabs to the left */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabButton {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: rgb(107 114 128 );
+  position: relative;
+}
+
+.tabButton:hover {
+  color: rgb(55 65 81 );
+}
+
+.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #2563eb;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.techCard {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.techCard:hover {
+  transform: translateY(-4px);
+}
+
+.iconWrapper {
+  margin-bottom: 0.5rem;
+}
+
+/* Icon Colors */
+.orange {
+  color: #f16529;
+}
+
+.blue {
+  color: #2965f1;
+}
+
+.yellow {
+  color: #f0db4f;
+}
+
+.sky {
+  color: #61dafb;
+}
+
+.green {
+  color: #42b883;
+}
+
+.teal {
+  color: #38bdf8;
+}
+
+.techName {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111827;
+}
