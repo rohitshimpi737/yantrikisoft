@@ -8,7 +8,7 @@ const WhatIsAIDevelopment: React.FC = () => {
         <div className={styles.contentWrapper}>
           <div className={styles.imageWrapper}>
             <img
-              // src="https://readdy.ai/api/search-image?query=web%20development%20concept%20illustration%20showing%20HTML%2C%20CSS%2C%20JavaScript%20code%20on%20screens%2C%20modern%20web%20browsers%20like%20Chrome%20and%20Firefox%2C%20responsive%20design%20across%20devices%2C%20clean%20digital%20illustration%20style%2C%20professional%2C%20tech-focused&width=600&height=500&seq=123457&orientation=landscape"
+              src="https://readdy.ai/api/search-image?query=web%20development%20concept%20illustration%20showing%20HTML%2C%20CSS%2C%20JavaScript%20code%20on%20screens%2C%20modern%20web%20browsers%20like%20Chrome%20and%20Firefox%2C%20responsive%20design%20across%20devices%2C%20clean%20digital%20illustration%20style%2C%20professional%2C%20tech-focused&width=600&height=500&seq=123457&orientation=landscape"
               alt="AI Development Illustration"
               className={styles.image}
             />
@@ -22,8 +22,8 @@ const WhatIsAIDevelopment: React.FC = () => {
               <span className={styles.highlight}>decision-making</span>. It leverages advanced technologies like{' '}
               <span className={styles.highlight}>machine learning</span>,{' '}
               <span className={styles.highlight}>natural language processing</span>, and{' '}
-              <span className={styles.highlight}>computer vision</span> to create systems that solve real-world problems efficiently. 
-              From <span className={styles.highlight}>chatbots</span> to <span className={styles.highlight}>predictive models</span>, 
+              <span className={styles.highlight}>computer vision</span> to create systems that solve real-world problems efficiently.
+              From <span className={styles.highlight}>chatbots</span> to <span className={styles.highlight}>predictive models</span>,
               AI empowers businesses to automate, optimize, and innovate like never before.
             </p>
             <div className={styles.icons}>

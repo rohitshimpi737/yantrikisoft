@@ -5,21 +5,21 @@ const testimonials = [
   {
     rating: 5,
     quote:
-      'Yantrikisoft transformed our digital presence with a stunning website and effective SEO strategy. Our online traffic has increased by 200% since working with them.',
+      "Yantrikisoft transformed our digital presence with a stunning website and effective SEO strategy. Our online traffic has increased by 200% since working with them.",
     name: 'Michael Richardson',
     title: 'CEO, TechVision Inc.',
   },
   {
     rating: 5,
     quote:
-      'The mobile app developed by Yantrikisoft has revolutionized how we interact with our customers. The user experience is seamless and our customer satisfaction ratings have soared.',
+      "The mobile app developed by Yantrikisoft has revolutionized how we interact with our customers. The user experience is seamless and our customer satisfaction ratings have soared.",
     name: 'Sarah Johnson',
     title: 'Marketing Director, Retail Solutions',
   },
   {
     rating: 5,
     quote:
-      'The custom ERP solution developed by Yantrikisoft has streamlined our operations and reduced manual processes by 70%. Their team\'s expertise and support have been invaluable.',
+      "The custom ERP solution developed by Yantrikisoft has streamlined our operations and reduced manual processes by 70%. Their team's expertise and support have been invaluable.",
     name: 'David Thompson',
     title: 'Operations Manager, GlobalLogistics',
   },
@@ -43,7 +43,7 @@ const Testimonials = () => {
                   <i key={i} className="ri-star-fill" />
                 ))}
               </div>
-              <p className={styles.quote}>"{testimonial.quote}"</p>
+              <p className={styles.quote}>&quot;{testimonial.quote}&quot;</p>
               <div className={styles.author}>
                 <div className={styles.avatar}>
                   <i className="ri-user-line" />

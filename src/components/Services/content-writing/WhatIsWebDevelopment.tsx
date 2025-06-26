@@ -21,9 +21,10 @@ const WhatIsContentWriting: React.FC = () => {
               <span className={styles.highlight}>articles</span>, persuasive{' '}
               <span className={styles.highlight}>landing pages</span>, and compelling{' '}
               <span className={styles.highlight}>social media captions</span>. Effective content writing combines a deep understanding of{' '}
-              <span className={styles.highlight}>SEO</span>, audience intent, and brand voice to communicate messages that resonate and convert. It's the perfect harmony of creativity and strategy that helps brands connect, inform, and inspire across platforms like{' '}
+              <span className={styles.highlight}>SEO</span>, audience intent, and brand voice to communicate messages that resonate and convert. It&apos;s the perfect harmony of creativity and strategy that helps brands connect, inform, and inspire across platforms like{' '}
               <span className={styles.highlight}>Google</span>, <span className={styles.highlight}>LinkedIn</span>, and more.
             </p>
+
             <div className={styles.icons}>
               <div className={styles.icon}>
                 <i className="ri-chrome-fill ri-2x text-gray-600"></i>

@@ -67,9 +67,10 @@ const WhyCustomSoftwareERP = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "Custom software and ERP systems are the backbone of a successful, efficient, and scalable business."
+            &quot;Custom software and ERP systems are the backbone of a successful, efficient, and scalable business.&quot;
           </p>
         </div>
+
       </div>
     </section>
   );

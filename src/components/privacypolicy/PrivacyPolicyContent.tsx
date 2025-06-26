@@ -73,7 +73,7 @@ const PrivacyPolicyContent: React.FC = () => (
       <div className={styles.stack}>
         <div>
           <h3><i className="ri-service-line"></i> Providing and Improving Our Services</h3>
-          <p>We use your information to deliver the services you've requested, process transactions, and enhance your user experience. We also analyze usage patterns to improve our features and functionality.</p>
+          <p>We use your information to deliver the services you&apos;ve requested, process transactions, and enhance your user experience...</p>
         </div>
         <div>
           <h3><i className="ri-customer-service-2-line"></i> Customer Support</h3>
@@ -161,7 +161,7 @@ const PrivacyPolicyContent: React.FC = () => (
         <h2>Policy Updates</h2>
       </div>
       <p>
-        We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make changes, we will update the "Last Updated" date at the top of this policy and notify you in one or more of the following ways:
+        We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make changes, we will update the &quot;Last Updated&quot; date at the top of this policy and notify you in one or more of the following ways:
       </p>
       <ul>
         <li><i className="ri-mail-line"></i> Sending an email to the address associated with your account</li>

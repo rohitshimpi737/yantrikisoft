@@ -4,9 +4,8 @@ import ServicesSection from '@/components/AllServices/ServicesSection';
 import CtaSection from '@/components/AllServices/CtaSection';
 import WhyChooseUs from '@/components/AllServices/WhyChooseUs';
 import Testimonials from '@/components/AllServices/Testimonials';
-import Contact from '@/components/AllServices/Contact';
+import Contact from '@/components/HomePage/ContactUs';
 import { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "All Services | Yantrikisoft",

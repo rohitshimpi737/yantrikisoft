@@ -1,5 +1,7 @@
 import React from 'react';
-import styles from '@/styles/HomePage/HowWeCreateValue.module.css'; // Adjust the path as necessary
+import Image from 'next/image';
+import styles from '@/styles/HomePage/HowWeCreateValue.module.css';
+
 const HowWeCreateValue = () => {
   return (
     <section className={styles.section}>
@@ -7,10 +9,13 @@ const HowWeCreateValue = () => {
         <h2 className={styles.heading}>How We Create Value</h2>
         <div className={styles.grid}>
           <div className={styles.imageWrapper}>
-            <img
+            <Image
               src="https://readdy.ai/api/search-image?query=modern%20business%20team%20collaborating%20in%20a%20bright%20office%20space%2C%20discussing%20strategy%20and%20innovation%2C%20professional%20environment%20with%20clean%20minimalist%20design%2C%20high%20quality%20corporate%20image&width=800&height=600&seq=3&orientation=landscape"
               alt="Value Creation"
+              width={800}
+              height={600}
               className={styles.image}
+              unoptimized // optional: use if it's a remote image that isn't on an allowlist
             />
             <div className={styles.overlay}></div>
           </div>

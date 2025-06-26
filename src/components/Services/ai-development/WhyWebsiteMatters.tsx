@@ -97,9 +97,10 @@ const WhyAIMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "AI isn’t the future — it’s the competitive edge your business needs today."
+            &quot;AI isn&apos;t the future — it&apos;s the competitive edge your business needs today.&quot;
           </p>
         </div>
+
       </div>
     </section>
   );

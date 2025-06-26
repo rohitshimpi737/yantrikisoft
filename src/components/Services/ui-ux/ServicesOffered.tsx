@@ -67,7 +67,7 @@ const services = [
 const ServicesOffered = () => {
   return (
     <section className={styles.section}>
-      <div className="container mx-auto px-6">
+      <div className={styles.container}>
         <h2 className={styles.heading}>Services Offered</h2>
         <div className={styles.grid}>
           {services.map((service, index) => (

@@ -11,12 +11,33 @@
   margin-bottom: 40px;
 }
 
+/* .productCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+} */
+
 .productCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+  margin: 0 1rem; /* Add spacing on smaller screens */
+}
+
+@media (min-width: 768px) {
+  .productCard {
+    margin: 0 4rem; /* More spacing on tablets */
+  }
+}
+
+@media (min-width: 1200px) {
+  .productCard {
+    margin: 0 7rem; /* Even more on large screens */
+  }
 }
 
 .imageWrapper {

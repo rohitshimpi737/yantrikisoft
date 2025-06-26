@@ -1,0 +1,64 @@
+.container {
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+}
+
+.hero {
+  background-color: #f0f4ff;
+  padding: 90px 20px 70px 20px;
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+
+.heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #1f2937;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  margin-top: 12px;
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.cardsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cardsSection > * {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 20px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid #f1f1f1;
+}
+
+.cardsSection > *:hover {
+  box-shadow: 0 6px 24px rgba(59,130,246,0.10);
+  transform: translateY(-4px) scale(1.03);
+}
+.formSection {
+  padding: 40px 20px;
+  background-color: #f9fafb;
+}
+
+.mapSection {
+  height: 400px;
+}

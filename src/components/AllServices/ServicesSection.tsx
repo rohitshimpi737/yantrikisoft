@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '@/styles/AllServices/ServicesSection.module.css';
 import {
     RiLayout4Line,
@@ -81,9 +82,9 @@ const ServicesSection: React.FC = () => {
                             <div className={styles.icon}>{service.icon}</div>
                             <h3 className={styles.cardTitle}>{service.title}</h3>
                             <p className={styles.cardText}>{service.desc}</p>
-                            <a href={service.link}  className={styles.cardLink}>
+                            <Link href={service.link} className={styles.cardLink}>
                                 Explore Service <RiArrowRightLine className={styles.cardArrow} />
-                            </a>
+                            </Link>
                         </div>
                     ))}
 

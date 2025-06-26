@@ -97,9 +97,10 @@ const WhyWebsiteMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "Good design is not just about aesthetics, it's about creating a seamless user experience that converts."
+            &quot;Good design is not just about aesthetics, it&apos;s about creating a seamless user experience that converts.&quot;
           </p>
         </div>
+
       </div>
     </section>
   );

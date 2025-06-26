@@ -31,7 +31,7 @@ const StatsAndCTA = () => {
           </p>
           <div className={styles.ctaButtons}>
             <button className={styles.primaryButton}>Get Started Today</button>
-            <button className={styles.secondaryButton}>View Our Portfolio</button>
+            {/* <button className={styles.secondaryButton}>View Our Portfolio</button> */}
           </div>
         </div>
       </section>

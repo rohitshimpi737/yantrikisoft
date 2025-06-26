@@ -42,7 +42,7 @@ const CookiePolicyContent: React.FC = () => (
         </div>
         <div className={styles.card}>
           <h3><span className={styles.iconSm}><i className="ri-line-chart-line"></i></span> Analytics Cookies</h3>
-          <p>These cookies help us understand how visitors interact with our website. The information collected is used to improve our website's functionality and user experience.</p>
+          <p>These cookies help us understand how visitors interact with our website. The information collected is used to improve our website&apos;s functionality and user experience.</p>
           <ul>
             <li>Page view statistics</li>
             <li>User behavior analysis</li>
@@ -150,7 +150,7 @@ const CookiePolicyContent: React.FC = () => (
         <h2>Policy Updates</h2>
       </div>
       <p>
-        We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make changes, we will update the "Last Updated" date at the top of this policy.
+        We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make changes, we will update the &quot;Last Updated&quot; date at the top of this policy.
       </p>
       <p>
         We encourage you to review this Cookie Policy periodically to stay informed about our use of cookies and related technologies.

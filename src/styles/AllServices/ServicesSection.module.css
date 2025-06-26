@@ -5,11 +5,19 @@
   background: linear-gradient(to bottom right, #f9fafb, rgba(191, 219, 254, 0.5));
 }
 
-.container {
+/* .container {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem; /* Optional: maintain a bit of padding inside container */
+  padding: 0 1.5rem;
+} */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;      /* Add a max-width for better centering on large screens */
+  margin: 0 auto;
+  padding: 0 2rem;        /* Increase horizontal padding for more space on both sides */
 }
 
 .header {

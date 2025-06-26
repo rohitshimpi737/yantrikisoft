@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '@/styles/Services/Hero.module.css';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
@@ -13,11 +14,17 @@ const Hero: React.FC = () => {
           <p className={styles.text}>
             Great design isn’t just beautiful—it’s intuitive, inclusive, and built for impact.
           </p>
-          <div className={styles.buttonContainer}>
+          {/* <div className={styles.buttonContainer}>
             <button className={styles.button}>
               Contact Us
             </button>
+          </div> */}
+          <div className={styles.buttonContainer}>
+            <Link href="/contact">
+              <button className={styles.button}>Contact Us</button>
+            </Link>
           </div>
+
         </div>
       </div>
     </section>

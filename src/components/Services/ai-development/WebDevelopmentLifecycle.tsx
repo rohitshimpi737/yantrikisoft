@@ -2,18 +2,23 @@
 import React, { useState } from "react";
 import styles from "@/styles/Services/WebDevelopmentLifecycle.module.css";
 
-const phases = [
+// Define type for a phase
+interface Phase {
+  title: string;
+  description: string;
+  iconClass: string;
+  icon: string;
+  details: string[];
+}
+
+const phases: Phase[] = [
   {
     title: "Requirement Gathering",
     description:
       "Understanding business needs, identifying use cases, and defining AI goals and expectations.",
     iconClass: "lightbulb-flash",
     icon: "ri-lightbulb-flash-line ri-lg",
-    details: [
-      "Business Case Definition",
-      "Stakeholder Interviews",
-      "Goal Alignment",
-    ],
+    details: ["Business Case Definition", "Stakeholder Interviews", "Goal Alignment"],
   },
   {
     title: "Data Collection & Preparation",
@@ -29,11 +34,7 @@ const phases = [
       "Selecting the right algorithms, training the models, and iteratively improving performance.",
     iconClass: "cpu",
     icon: "ri-cpu-line ri-lg",
-    details: [
-      "Algorithm Selection",
-      "Model Training",
-      "Hyperparameter Tuning",
-    ],
+    details: ["Algorithm Selection", "Model Training", "Hyperparameter Tuning"],
   },
   {
     title: "Validation & Testing",
@@ -41,11 +42,7 @@ const phases = [
       "Validating the AI model for performance, accuracy, and robustness before deployment.",
     iconClass: "verify",
     icon: "ri-verify-line ri-lg",
-    details: [
-      "Model Evaluation",
-      "Cross Validation",
-      "Explainability Check",
-    ],
+    details: ["Model Evaluation", "Cross Validation", "Explainability Check"],
   },
   {
     title: "Deployment",
@@ -61,18 +58,17 @@ const phases = [
       "Tracking model performance, gathering feedback, and updating models to maintain accuracy and value.",
     iconClass: "line-chart",
     icon: "ri-line-chart-line ri-lg",
-    details: [
-      "Model Monitoring",
-      "Feedback Looping",
-      "Continuous Learning",
-    ],
+    details: ["Model Monitoring", "Feedback Looping", "Continuous Learning"],
   },
 ];
 
-const TimelineItem: React.FC<{ phase: any; isLeftAligned: boolean }> = ({
-  phase,
-  isLeftAligned,
-}) => {
+// Component props type
+interface TimelineItemProps {
+  phase: Phase;
+  isLeftAligned: boolean;
+}
+
+const TimelineItem: React.FC<TimelineItemProps> = ({ phase, isLeftAligned }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
@@ -108,7 +104,7 @@ const TimelineItem: React.FC<{ phase: any; isLeftAligned: boolean }> = ({
       >
         <div className={styles.details}>
           <ul className={styles.detailsList}>
-            {phase.details.map((detail: string, i: number) => (
+            {phase.details.map((detail, i) => (
               <li key={i} className={styles.detailItem}>
                 <i className="ri-checkbox-circle-line text-primary mr-2"></i>
                 {detail}

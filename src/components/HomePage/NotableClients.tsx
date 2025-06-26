@@ -6,13 +6,15 @@ const clients = [
   { logo: "/logos/jcd.png", alt: "JCD", className: styles.jcd },
   { logo: "/logos/chain2bollywood.png", alt: "Chain 2 Bollywood", className: styles.chain2bollywood },
   { logo: "/logos/hindconnect.png", alt: "hindconnect", className: styles.hindconnect },
+  { logo: "/logos/get2act.png", alt: "get2act", className: styles.get2act },
+
 
 ];
 
 export default function NotableClients() {
   return (
     <section className={styles.notableClients}>
-      <h2 className={styles.title}>OUR NOTABLE CLIENTS</h2>
+      <h2 className={styles.title}>Our Notable Clients</h2>
       <div className={styles.clientGrid}>
         {clients.map((client, index) => (
           <div key={index} className={styles.clientLogoWrapper}>
@@ -24,7 +26,8 @@ export default function NotableClients() {
               height={0} 
               sizes="(max-width: 1200px) 100vw, 250px"
             /> */}
-            <Image
+
+            <img
               src={client.logo}
               alt={client.alt}
               className={`${styles.clientLogo} ${client.className}`}

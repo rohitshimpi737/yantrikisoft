@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.teamSection {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Rubik', sans-serif;
+  color: #374151;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.scrollContainer {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.teamRow {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  min-width: max-content;
+}
+
+.card {
+  min-width: 200px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.avatar {
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #1f2937;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: #4b5563;
+  font-weight: 500;
+}

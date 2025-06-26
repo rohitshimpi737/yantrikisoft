@@ -10,10 +10,6 @@ import {
   RiTruckLine,
   RiPieChartLine,
 } from "react-icons/ri";
-import { useState } from "react";
-import clsx from "clsx";
-
-type TechCategory = "customSoftware" | "erpSolutions";
 
 const techContent = {
   customSoftware: [
@@ -28,44 +24,41 @@ const techContent = {
   ],
 };
 
-const tabs = [
-  { id: "customSoftware", label: "Custom Software" },
-  { id: "erpSolutions", label: "ERP Solutions" },
-];
-
 const TechStack = () => {
-  const [activeTab, setActiveTab] = useState<TechCategory>("customSoftware");
-
   return (
     <div className={styles.techStack}>
       <h2 className={styles.heading}>Our Core Capabilities</h2>
-      <div className={styles.tabs}>
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={clsx(styles.tabButton, {
-              [styles.active]: activeTab === tab.id,
-            })}
-            onClick={() => setActiveTab(tab.id as TechCategory)}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-      <div className={styles.techGrid}>
-        {techContent[activeTab]?.map((item, idx) => (
-          <div key={idx} className={styles.techCard}>
-            <div className={styles.iconWrapper}>
-              <div className={item.color}>
-                <item.Icon size={32} />
+
+      {Object.entries(techContent).map(([category, tools]) => (
+        <div key={category} className={styles.categorySection}>
+          <h3 className={styles.categoryTitle}>{formatCategoryTitle(category)}</h3>
+          <div className={styles.techGrid}>
+            {tools.map((item, idx) => (
+              <div key={idx} className={styles.techCard}>
+                <div className={styles.iconWrapper}>
+                  <div className={item.color}>
+                    <item.Icon size={28} />
+                  </div>
+                </div>
+                <span className={styles.techName}>{item.name}</span>
               </div>
-            </div>
-            <span className={styles.techName}>{item.name}</span>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
+};
+
+const formatCategoryTitle = (key: string) => {
+  switch (key) {
+    case "customSoftware":
+      return "Custom Software Development";
+    case "erpSolutions":
+      return "ERP & Business Solutions";
+    default:
+      return key;
+  }
 };
 
 export default TechStack;

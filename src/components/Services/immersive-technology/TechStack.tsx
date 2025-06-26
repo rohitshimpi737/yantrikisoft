@@ -12,13 +12,8 @@ import {
   RiGlassesLine,
   RiCodeSSlashLine,
 } from "react-icons/ri";
-import { useState } from "react";
-import clsx from "clsx";
 
-// Full forms for clarity in type and tab labels
-type TechCategory = "Augmented Reality" | "Virtual Reality" | "Mixed Reality" | "Extended Reality";
-
-const techContent: Record<TechCategory, { name: string; Icon: any; color: string }[]> = {
+const techContent = {
   "Augmented Reality": [
     { name: "AR.js", Icon: RiCameraLensLine, color: styles.blue },
     { name: "8thWall", Icon: RiDeviceLine, color: styles.green },
@@ -39,44 +34,28 @@ const techContent: Record<TechCategory, { name: string; Icon: any; color: string
   ],
 };
 
-const tabs = [
-  { id: "Augmented Reality", label: "AR (Augmented Reality)" },
-  { id: "Virtual Reality", label: "VR (Virtual Reality)" },
-  { id: "Mixed Reality", label: "MR (Mixed Reality)" },
-  { id: "Extended Reality", label: "XR (Extended Reality)" },
-];
-
 const TechStack = () => {
-  const [activeTab, setActiveTab] = useState<TechCategory>("Augmented Reality");
-
   return (
     <div className={styles.techStack}>
-      <h2 className={styles.heading}>Tech Stack We Use for Immersive Technologies</h2>
-      <div className={styles.tabs}>
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={clsx(styles.tabButton, {
-              [styles.active]: activeTab === tab.id,
-            })}
-            onClick={() => setActiveTab(tab.id as TechCategory)}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-      <div className={styles.techGrid}>
-        {techContent[activeTab]?.map((item, idx) => (
-          <div key={idx} className={styles.techCard}>
-            <div className={styles.iconWrapper}>
-              <div className={item.color}>
-                <item.Icon size={32} />
+      <h2 className={styles.heading}>Immersive Tech Stack (AR, VR, MR, XR)</h2>
+
+      {Object.entries(techContent).map(([category, tools]) => (
+        <div key={category} className={styles.categorySection}>
+          <h3 className={styles.categoryTitle}>{category}</h3>
+          <div className={styles.techGrid}>
+            {tools.map((item, idx) => (
+              <div key={idx} className={styles.techCard}>
+                <div className={styles.iconWrapper}>
+                  <div className={item.color}>
+                    <item.Icon size={28} />
+                  </div>
+                </div>
+                <span className={styles.techName}>{item.name}</span>
               </div>
-            </div>
-            <span className={styles.techName}>{item.name}</span>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '@/styles/Shared/Footer.module.css';
 
 const Footer = () => {
@@ -15,11 +16,10 @@ const Footer = () => {
           <div>
             <h3 className={styles.heading}>Contact us</h3>
             <ul className={styles.list}>
-              <li className={styles.text}>Sector 19D, Vashi</li>
+              {/* <li className={styles.text}>Sector 19D, Vashi</li>
               <li className={styles.text}>Navi Mumbai,</li>
-              <li className={styles.text}>Maharashtra</li>
-              <li className={styles.text}>+91 9920448802</li>
-              <li className={styles.text}>+91 9920448809</li>
+              <li className={styles.text}>Maharashtra</li> */}
+              <li className={styles.text}>+91 88796 88067</li>
             </ul>
           </div>
           <div>
@@ -33,21 +33,43 @@ const Footer = () => {
           <div>
             <h3 className={styles.heading}>Quick Links</h3>
             <ul className={styles.list}>
-              <li><a href="#" className={styles.link}>Home</a></li>
-              <li><a href="#" className={styles.link}>About</a></li>
-              <li><a href="#" className={styles.link}>Services</a></li>
-              <li><a href="#" className={styles.link}>Contact</a></li>
+              <li>
+                <Link href="/" legacyBehavior>
+                  <a className={styles.link}>Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" legacyBehavior>
+                  <a className={styles.link}>About</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/all-services" legacyBehavior>
+                  <a className={styles.link}>Services</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" legacyBehavior>
+                  <a className={styles.link}>Contact</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
         <div className={styles.bottom}>
           <div className={styles.policyLinks}>
-            <a href="privacypolicy" className={styles.link}>PRIVACY POLICY</a>
-            <a href="cookiepolicy" className={styles.link}>COOKIE POLICY</a>
-            <a href="terms" className={styles.link}>TERMS</a>
+            <Link href="/privacypolicy" legacyBehavior>
+              <a className={styles.link}>PRIVACY POLICY</a>
+            </Link>
+            <Link href="/cookiepolicy" legacyBehavior>
+              <a className={styles.link}>COOKIE POLICY</a>
+            </Link>
+            <Link href="/terms" legacyBehavior>
+              <a className={styles.link}>TERMS</a>
+            </Link>
           </div>
           <p className={styles.copyright}>
-            Copyright © 2021 Yantrikisoft - All Rights Reserved. - P.IVA 0128790127
+            Copyright © 2021 Yantrikisoft - All Rights Reserved.
           </p>
         </div>
       </div>

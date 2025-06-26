@@ -11,7 +11,7 @@ declare module "react-google-recaptcha" {
     tabindex?: number;
     badge?: "bottomright" | "bottomleft" | "inline";
     hl?: string;
-    ref?: React.Ref<any>;
+    ref?: React.Ref<ReCAPTCHA>;
   }
 
   class ReCAPTCHA extends React.Component<ReCAPTCHAProps> {

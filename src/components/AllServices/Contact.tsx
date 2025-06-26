@@ -10,7 +10,7 @@ const Contact = () => {
           <div>
             <h2 className={styles.heading}>Get in Touch</h2>
             <p className={styles.description}>
-              Have a project in mind? Let's discuss how we can help you achieve your business goals through innovative technology solutions.
+              Have a project in mind? Let&apos;s discuss how we can help you achieve your business goals through innovative technology solutions.
             </p>
             <div className={styles.infoList}>
               <div className={styles.infoItem}>
@@ -19,7 +19,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className={styles.label}>Call Us</p>
-                  <p className={styles.value}>8879688067</p>
+                  <p className={styles.value}>+91 88796 88067</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className={styles.label}>Email Us</p>
-                  <p className={styles.value}>hello@yantrikisoft.com</p>
+                  <p className={styles.value}>info@yantrikisoft.com</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -37,7 +37,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className={styles.label}>Visit Us</p>
-                  <p className={styles.value}>Tech Hub, 123 Innovation Street, Mumbai, India</p>
+                  <p className={styles.value}>
+                    Sector 19D, Vashi
+                    Navi Mumbai,
+                    Maharashtra, India</p>
                 </div>
               </div>
             </div>

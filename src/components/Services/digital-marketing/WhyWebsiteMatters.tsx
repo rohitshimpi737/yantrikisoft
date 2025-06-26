@@ -91,9 +91,10 @@ const WhyWebsiteMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "Digital marketing is not just an option, it's a necessity for modern businesses."
+            &quot;Digital marketing is not just an option, it&apos;s a necessity for modern businesses.&quot;
           </p>
         </div>
+
       </div>
     </section>
   );

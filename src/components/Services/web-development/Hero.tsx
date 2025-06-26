@@ -11,8 +11,9 @@ const Hero: React.FC = () => {
             Build Modern, Scalable, and High-Performing Websites That Work for Your Business
           </h1>
           <p className={styles.text}>
-            Your website is more than just a digital identity — it's the foundation of your customer's online experience.
+            Your website is more than just a digital identity — it&apos;s the foundation of your customer&apos;s online experience.
           </p>
+
           <div className={styles.buttonContainer}>
             <button className={styles.button}>
               Contact Us

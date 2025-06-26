@@ -91,9 +91,10 @@ const WhyWebsiteMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "Content isn't just what you say — it's how your brand is remembered."
+            &quot;Content isn&apos;t just what you say — it&apos;s how your brand is remembered.&quot;
           </p>
         </div>
+
       </div>
     </section>
   );

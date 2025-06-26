@@ -1,15 +1,19 @@
 .heroSection {
   position: relative;
   width: 100%;
-  padding: 7rem 0 0;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 0;
 }
 
 .background {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to right, white, rgba(255, 255, 255, 0.9), transparent),
+    linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.65)),
     url("https://readdy.ai/api/search-image?query=modern%20business%20team%20collaboration%20with%20diverse%20professionals%20in%20a%20bright%20modern%20office%2C%20stylish%20business%20attire%2C%20professional%20setting%2C%20clean%20bright%20background%20on%20the%20left%20side%20fading%20to%20show%20people%20on%20right%20side%2C%20high%20quality%20professional%20corporate%20image&width=1400&height=600&seq=1&orientation=landscape");
   background-size: cover;
   background-position: center;
@@ -18,16 +22,37 @@
 
 .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 1400px;
-  margin: 0 20px;
-  /* padding: 0 1.5rem; */
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.lineIndicator {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  z-index: 3;
+}
+
+.verticalLine {
+  width: 5px;
+  height: 20px;
+  background-color: #0066cc;
+  border-radius: 4px;
 }
 
 .textContainer {
   width: 100%;
-  max-width: 50%;
-  margin-bottom: 2.5rem;
+  max-width: 800px;
 }
 
 .title {
@@ -45,12 +70,13 @@
 
 .buttonContainer {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
 .primaryButton {
-  background-color: #0066CC;
+  background-color: #0066cc;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 10px;
@@ -62,26 +88,17 @@
   background-color: #2579cd;
 }
 
-.secondaryButton {
-  background-color: white;
-  color: #0066CC;
-  padding: 0.8rem 1.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  border: 2px solid #0066CC;
-  transition: background-color 0.2s;
-}
-
-.secondaryButton:hover {
-  background-color: #f3f4f6;
-}
-
 @media (max-width: 768px) {
   .heroSection {
     padding: 4rem 0;
+    height: auto;
   }
 
   .textContainer {
     max-width: 100%;
+  }
+
+  .lineIndicator {
+    display: none;
   }
 }

@@ -73,9 +73,10 @@ const WhyWebsiteMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "A good website isn't just found — it's felt. It's fast, accessible, and built with the user in mind."
+            &quot;A good website isn&apos;t just found — it&apos;s felt. It&apos;s fast, accessible, and built with the user in mind.&quot;
           </p>
         </div>
+
       </div>
     </section>
   );

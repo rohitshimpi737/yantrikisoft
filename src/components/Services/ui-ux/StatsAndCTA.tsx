@@ -27,8 +27,9 @@ const StatsAndCTA = () => {
         <div className={styles.ctaContainer}>
           <h2 className={styles.ctaHeading}>Ready to Transform Your User Experience?</h2>
           <p className={styles.ctaDescription}>
-        Let's discuss how YANTRIKISOFT’s UI/UX design services can help you create intuitive, engaging, and beautiful user interfaces that enhance your brand and boost user satisfaction.
+            {"Let's discuss how YANTRIKISOFT's UI/UX design services can help you create intuitive, engaging, and beautiful user interfaces that enhance your brand and boost user satisfaction."}
           </p>
+
           <div className={styles.ctaButtons}>
             <button className={styles.primaryButton}>Get Started Today</button>
           </div>

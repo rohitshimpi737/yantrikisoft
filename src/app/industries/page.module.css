@@ -1,0 +1,128 @@
+.heroSection {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.7);
+  z-index: 1;
+}
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.heroSubtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.ctaBtn {
+  background: #0056b3;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.ctaBtn:hover {
+  background: #004494;
+}
+.hexagonImg {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.overviewSection {
+  background: #f9fafb;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0056b3;
+}
+.industrySection {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.industryCardRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(to right, #fff, #f0f6ff, #fff);
+  border-left: 8px solid #0056b3;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s;
+}
+@media (min-width: 768px) {
+  .industryCardRow {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.industryCardRowReverse {
+  composes: industryCardRow;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .industryCardRowReverse {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+.industryCardContent {
+  flex: 3;
+  padding-right: 0;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .industryCardContent {
+    padding-right: 3rem;
+    margin-bottom: 0;
+  }
+}
+.industryCardImage {
+  flex: 2;
+  min-width: 250px;
+}
+.industryTitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0056b3;
+}
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  position: relative;
+  padding-left: 2rem;
+}
+.checkItem::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #0056b3 url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.285 6.709a1 1 0 0 0-1.414-1.418l-9.192 9.193-4.243-4.243a1 1 0 1 0-1.415 1.415l4.95 4.95a1 1 0 0 0 1.414 0l9.9-9.897z"/></svg>') center/60% no-repeat;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ctaSection {
+  background: #f3f4f6;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}

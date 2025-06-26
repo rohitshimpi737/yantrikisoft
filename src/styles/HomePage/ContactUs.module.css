@@ -13,6 +13,14 @@
   color: #111827;
 }
 
+.recaptcha {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 .subheading {
   font-size: 1.5rem; /* 24px */
   font-weight: 600;
@@ -26,7 +34,7 @@
   color: #6b7280;
   margin-bottom: 2.5rem;
   text-align: center;
-  max-width: 720px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.7;

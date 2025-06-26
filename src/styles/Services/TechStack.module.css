@@ -1,22 +1,143 @@
 .techStack {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  background-color: #f9fbfc;
+  color: #1f2937;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #111827;
+}
+
+.categorySection {
+  margin-bottom: 2.5rem;
+  background-color: #ffffff;
+  padding: 1.5rem 1.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.categoryTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-left: 5px solid #2563eb;
+  padding-left: 0.75rem;
+  color: #1e40af;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.techCard {
+  background-color: #f9fafb;
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.techCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.iconWrapper {
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.techName {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+/* Icon Color Classes */
+.orange { color: #f97316; }
+.blue { color: #3b82f6; }
+.yellow { color: #facc15; }
+.sky { color: #0ea5e9; }
+.green { color: #10b981; }
+.purple { color: #8b5cf6; }
+.pink { color: #ec4899; }
+.red { color: #ef4444; }
+.gray { color: #6b7280; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.1rem;
+  }
+
+  .techCard {
+    padding: 0.7rem;
+  }
+
+  .techName {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .techStack {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .categoryTitle {
+    font-size: 1rem;
+  }
+
+  .techName {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+
+/* 
+.techStack {
   padding: 0 4rem 4rem;
   background-color: #f9fbfc;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .heading {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  text-align: center; /* Left align the heading */
+  text-align: center;
 }
 
 .tabs {
   display: flex;
-  justify-content: flex-start; /* Align tabs to the left */
+  justify-content: flex-start;
   gap: 2rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid #e0e0e0;
+  flex-wrap: wrap;
 }
 
 .tabButton {
@@ -26,12 +147,13 @@
   font-weight: 700;
   padding-bottom: 0.5rem;
   cursor: pointer;
-  color: rgb(107 114 128 );
+  color: rgb(107 114 128);
   position: relative;
+  transition: color 0.2s ease;
 }
 
 .tabButton:hover {
-  color: rgb(55 65 81 );
+  color: rgb(55 65 81);
 }
 
 .active {
@@ -62,18 +184,18 @@
   border-radius: 1rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .techCard:hover {
   transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .iconWrapper {
   margin-bottom: 0.5rem;
 }
 
-/* Icon Colors */
 .orange {
   color: #f16529;
 }
@@ -98,8 +220,68 @@
   color: #38bdf8;
 }
 
+.violet {
+  color: #6f42c1;
+}
+
+.indigo {
+  color: #6366f1;
+}
+
+.darkGray {
+  color: #4b5563;
+}
+
+.darkBlue {
+  color: #0a66c2;
+}
+
+.red {
+  color: #dc2626;
+}
+
 .techName {
   font-size: 0.9rem;
   font-weight: 500;
   color: #111827;
 }
+
+@media (max-width: 768px) {
+  .techStack {
+    padding: 0 2rem 3rem;
+  }
+
+  .tabs {
+    gap: 1rem;
+  }
+
+  .tabButton {
+    font-size: 0.95rem;
+  }
+
+  .techGrid {
+    gap: 1rem;
+  }
+
+  .techCard {
+    padding: 0.75rem;
+  }
+
+  .techName {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .tabButton {
+    font-size: 0.9rem;
+  }
+
+  .techName {
+    font-size: 0.8rem;
+  }
+} */

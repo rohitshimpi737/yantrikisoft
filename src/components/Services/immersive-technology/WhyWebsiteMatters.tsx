@@ -97,7 +97,7 @@ const WhyImmersiveTechMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "Immersive technologies are transforming the way businesses engage with customers, offering new opportunities for innovation."
+            &quot;Immersive technologies are transforming the way businesses engage with customers, offering new opportunities for innovation.&quot;
           </p>
         </div>
       </div>

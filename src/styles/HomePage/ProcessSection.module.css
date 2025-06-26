@@ -19,11 +19,24 @@
 .grid {
   display: grid;
   gap: 1.5rem;
+  margin: 0 1rem; /* Mobile: left-right spacing */
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media (min-width: 768px) {
+  .grid {
+    margin: 0 4rem; /* Tablet */
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    margin: 0 7rem; /* Desktop */
+  }
+}
+
 .card {
-  background-color: white;
+  background-color:#f0f4ff;
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);

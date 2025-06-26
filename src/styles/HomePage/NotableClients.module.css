@@ -11,30 +11,59 @@
   font-weight: bold;
   margin-bottom: 60px;
 }
-
+/* 
 .clientGrid {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
   flex-wrap: wrap;
+} */
+
+.clientGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.clientLogoWrapper {
+
+/* .clientLogoWrapper {
   flex: 1 1 200px;
   max-width: 280px;
+  display: flex;
+  justify-content: center;
+
+
+  
+  align-items: center;
+} */
+
+.clientLogoWrapper {
+  flex: 0 0 200px;
+  max-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 /* Default image styling */
-.clientLogo {
+/* .clientLogo {
   width: 100%;
   height: auto;
   max-height: 150px;
   object-fit: contain;
+} */
+
+.clientLogo {
+  width: 100%;
+  max-width: 140px;
+  max-height: 120px;
+  object-fit: contain;
 }
+
 
 /* Optional custom size tweaks (if some logos are disproportionate) */
 .sagaWood {
@@ -52,6 +81,11 @@
 .hindconnect {
   max-width: 220px;
 }
+.get2act {
+  max-width: 220px;
+}
+
+
 
 @media (max-width: 1024px) {
   .title {

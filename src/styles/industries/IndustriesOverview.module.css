@@ -1,0 +1,27 @@
+.overviewSection {
+  background: #f9fafb;
+  padding: 4rem 0 0 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0056b3;
+  margin-bottom: 1.25rem;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  color: #374151;
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '@/styles/AllServices/AllServicesHeroSection.module.css';
+import Link from 'next/link';
 
 const AllServicesHeroSection: React.FC = () => {
   return (
@@ -8,8 +9,9 @@ const AllServicesHeroSection: React.FC = () => {
         <h1>Innovative Technology Solutions for Your Business</h1>
         <p>We help businesses transform through technology with our comprehensive suite of digital services.</p>
         <div className={styles.buttons}>
-          <button className={styles.primaryBtn}>Get Started</button>
-          <button className={styles.secondaryBtn}>Learn More</button>
+            <Link href="/contact" className={styles.primaryBtn}>
+              Contact Us
+            </Link>
         </div>
       </div>
     </section>

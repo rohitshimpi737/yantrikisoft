@@ -10,7 +10,7 @@ const TermsPage = () => (
       <h1 className={styles.title}>Terms and Conditions</h1>
       <p className={styles.updated}>Last Updated: May 11, 2025</p>
       <p className={styles.intro}>
-        Welcome to Yantrikisoft's website. These Terms and Conditions govern your access to and use of Yantrikisoft's website, services, and applications. By accessing or using our Services, you agree to be bound by these Terms and Conditions.
+        Welcome to Yantrikisoft&apos;s website. These Terms and Conditions govern your access to and use of Yantrikisoft&apos;s website, services, and applications. By accessing or using our Services, you agree to be bound by these Terms and Conditions.
       </p>
     </header>
     <div className={styles.contentWrapper}>

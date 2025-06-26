@@ -103,8 +103,9 @@ const WhyWebsiteMatters = () => {
         </div>
         <div className={styles.quoteBox}>
           <p className={styles.quote}>
-            "Mobile apps are no longer optional—they are vital tools for business growth and customer engagement"
+            &quot;Mobile apps are no longer optional—they are vital tools for business growth and customer engagement&quot;
           </p>
+
         </div>
       </div>
     </section>

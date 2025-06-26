@@ -2,13 +2,15 @@ import React from "react";
 import styles from "../../styles/terms/TermsContent.module.css";
 
 const TermsContent: React.FC = () => (
+
   <main className={styles.termsContent}>
     {/* 1. Introduction */}
     <section id="introduction" className={styles.section}>
       <h2 className={styles.sectionTitle}>1. Introduction</h2>
       <p>
-        Welcome to Yantrikisoft's website. These Terms and Conditions govern your access to and use of Yantrikisoft's website, services, and applications (collectively, the "Services"). By accessing or using our Services, you agree to be bound by these Terms and Conditions.
+        Welcome to Yantrikisoft&apos;s website. These Terms and Conditions govern your access...
       </p>
+
       <p>
         Please read these Terms and Conditions carefully before using our Services. If you do not agree with any part of these terms, you may not access or use our Services.
       </p>
@@ -18,7 +20,7 @@ const TermsContent: React.FC = () => (
     <section id="acceptance" className={styles.section}>
       <h2 className={styles.sectionTitle}>2. Acceptance of Terms</h2>
       <p>
-        By accessing or using Yantrikisoft's website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions, as well as our Privacy Policy.
+        By accessing or using Yantrikisoft&apos;s website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions, as well as our Privacy Policy.
       </p>
       <p>
         These Terms and Conditions constitute a legally binding agreement between you and Yantrikisoft. If you are using our Services on behalf of a company, organization, or other entity, you represent and warrant that you have the authority to bind that entity to these Terms and Conditions.
@@ -41,7 +43,7 @@ const TermsContent: React.FC = () => (
         <li>Web Development</li>
         <li>Mobile App Development</li>
         <li>AI Development</li>
-        <li>Custom Software & ERP Development</li>
+        <li>Custom Software &amp; ERP Development</li>
         <li>Immersive Technology Services</li>
       </ul>
       <p>
@@ -76,9 +78,9 @@ const TermsContent: React.FC = () => (
       </p>
       <ul className={styles.list}>
         <li>Attempting to gain unauthorized access to any part of our Services</li>
-        <li>Engaging in any form of automated data collection without Yantrikisoft's prior consent</li>
+        <li>Engaging in any form of automated data collection without Yantrikisoft&apos;s prior consent</li>
         <li>Using our Services to transmit spam or other unsolicited communications</li>
-        <li>Interfering with other users' enjoyment of our Services</li>
+        <li>Interfering with other users&apos; enjoyment of our Services</li>
         <li>Using our Services in connection with any illegal activities</li>
       </ul>
     </section>
@@ -98,13 +100,13 @@ const TermsContent: React.FC = () => (
     <section id="intellectual" className={styles.section}>
       <h2 className={styles.sectionTitle}>6. Intellectual Property</h2>
       <p>
-        All content on Yantrikisoft's website, including but not limited to text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, is the property of Yantrikisoft or its licensors and is protected by international copyright, trademark, and other intellectual property laws.
+        All content on Yantrikisoft&apos;s website, including but not limited to text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, is the property of Yantrikisoft or its licensors and is protected by international copyright, trademark, and other intellectual property laws.
       </p>
       <p>
         You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without the prior written consent of Yantrikisoft.
       </p>
       <p>
-        Yantrikisoft's name, logo, and all related names, logos, product and service names, designs, and slogans are trademarks of Yantrikisoft or its affiliates. You may not use such marks without the prior written permission of Yantrikisoft.
+        Yantrikisoft&apos;s name, logo, and all related names, logos, product and service names, designs, and slogans are trademarks of Yantrikisoft or its affiliates. You may not use such marks without the prior written permission of Yantrikisoft.
       </p>
       <p>
         Any feedback, comments, or suggestions you may provide regarding our Services is entirely voluntary, and we will be free to use such feedback, comments, or suggestions without any obligation to you.
@@ -138,10 +140,10 @@ const TermsContent: React.FC = () => (
         <li>Unauthorized access, use, or alteration of your transmissions or content</li>
       </ul>
       <p>
-        In no event shall Yantrikisoft's total liability to you for all claims, damages, losses, and causes of action exceed the amount paid by you, if any, for accessing or using our Services during the six (6) months prior to bringing such claim.
+        In no event shall Yantrikisoft&apos;s total liability to you for all claims, damages, losses, and causes of action exceed the amount paid by you, if any, for accessing or using our Services during the six (6) months prior to bringing such claim.
       </p>
       <p>
-        The limitations of liability set forth above are fundamental elements of the basis of the bargain between Yantrikisoft and you.
+        The limitations and exclusions set forth in this section shall apply regardless of whether the damages arise from breach of contract, tort (including negligence), or any other legal theory.
       </p>
     </section>
 
@@ -159,31 +161,28 @@ const TermsContent: React.FC = () => (
       </p>
     </section>
 
-    {/* 10. Governing Law */}
-    <section id="governing" className={styles.section}>
-      <h2 className={styles.sectionTitle}>10. Governing Law</h2>
+    {/* 10. Termination */}
+    <section id="termination" className={styles.section}>
+      <h2 className={styles.sectionTitle}>10. Termination</h2>
       <p>
-        These Terms and Conditions shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.
+        We may terminate or suspend your access to all or part of our Services immediately, without prior notice or liability, if you breach any of the terms or conditions of this agreement or for any other reason.
       </p>
       <p>
-        Any disputes arising under or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts located in Pune, India.
+        Upon termination, your right to use the Services will immediately cease. If you wish to terminate your account, you may simply discontinue using the Services.
       </p>
       <p>
-        You agree to submit to the personal jurisdiction of the courts located in Pune, India, for the purpose of litigating all such claims or disputes.
+        All provisions of the Terms and Conditions which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
       </p>
     </section>
 
-    {/* 11. Changes to Terms */}
-    <section id="changes" className={styles.section}>
-      <h2 className={styles.sectionTitle}>11. Changes to Terms</h2>
+    {/* 11. Governing Law and Jurisdiction */}
+    <section id="governing-law" className={styles.section}>
+      <h2 className={styles.sectionTitle}>11. Governing Law and Jurisdiction</h2>
       <p>
-        Yantrikisoft reserves the right, at its sole discretion, to modify or replace these Terms and Conditions at any time. We will provide notice of any changes by posting the new Terms and Conditions on this page and updating the "Last Updated" date at the top of this page.
+        These Terms and Conditions shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions.
       </p>
       <p>
-        Your continued use of our Services after any such changes constitutes your acceptance of the new Terms and Conditions. If you do not agree to the new terms, please stop using our Services.
-      </p>
-      <p>
-        We encourage you to review these Terms and Conditions periodically for any changes. Changes to these Terms and Conditions are effective when they are posted on this page.
+        Any disputes arising out of or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts located in Nashik, Maharashtra, India.
       </p>
     </section>
 
@@ -193,16 +192,15 @@ const TermsContent: React.FC = () => (
       <p>
         If you have any questions about these Terms and Conditions, please contact us at:
       </p>
-      <div className={styles.contactBox}>
-        <p><strong>Yantrikisoft Technologies Pvt. Ltd.</strong></p>
-        <p>Office No. 305, 3rd Floor, Pride Icon</p>
-        <p>Kharadi, Pune - 411014</p>
-        <p>Maharashtra, India</p>
-        <p>
-          Email: <a href="mailto:legal@yantrikisoft.com" className={styles.link}>legal@yantrikisoft.com</a>
-        </p>
-        <p>Phone: +91 20 4862 5000</p>
-      </div>
+      <address>
+        Yantrikisoft Solutions Pvt Ltd<br />
+        11th Floor, D Wing, Sahara Star,<br />
+        Opposite Domestic Airport,<br />
+        Vile Parle East, Mumbai 400099<br />
+        Maharashtra, India<br />
+        Email: <a href="mailto:contact@yantrikisoft.com" className={styles.link}>contact@yantrikisoft.com</a><br />
+        Phone: +91-XXX-XXXXXXX
+      </address>
     </section>
   </main>
 );

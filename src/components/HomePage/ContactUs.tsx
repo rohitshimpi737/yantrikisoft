@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 import styles from "@/styles/HomePage/ContactUs.module.css";
 
 export default function ContactUs() {
@@ -12,6 +12,7 @@ export default function ContactUs() {
     phone: "",
     message: "",
   });
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -19,49 +20,46 @@ export default function ContactUs() {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const templateParams = {
-      from_name: formData.name,
-      company: formData.company,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-    };
+    if (!captchaToken) {
+      alert("Please complete the reCAPTCHA.");
+      return;
+    }
 
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // Access Service ID from .env
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Access Template ID from .env
-        templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! // Access Public Key from .env
-      )
-      .then(
-        (response) => {
-          console.log("Email sent successfully!", response);
-          alert("Your message has been sent!");
-          setFormData({
-            name: "",
-            company: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.error("Failed to send email:", error);
-          alert("Failed to send message. Please try again.");
-        }
-      );
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Your message has been sent!");
+        setFormData({
+          name: "",
+          company: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setCaptchaToken(null);
+      } else {
+        throw new Error("Failed to send email.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Message sending failed. Try again later.");
+    }
   };
 
   return (
     <section className={styles.contactSection}>
-      <p className={styles.subheading}>Let’s Discuss Your Project</p>
+      <p className={styles.subheading}>Let's Discuss Your Project</p>
       <p className={styles.description}>
-        Ready to transform your business with innovative digital solutions? Get
-        in touch with our team today.
+        Ready to transform your business with innovative digital solutions?
+        Connect with Yantrikisoft to harness the power of technology, enhance efficiency, and drive growth. Our team is here to turn your vision into reality. Get in touch with us today.
       </p>
       <div className={styles.contactContainer}>
         <form onSubmit={handleSubmit} className={styles.contactForm}>
@@ -104,10 +102,19 @@ export default function ContactUs() {
             onChange={handleChange}
             required
           />
+
+          <div className={styles.recaptcha}>
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+              onChange={(token) => setCaptchaToken(token)}
+            />
+          </div>
+
           <button type="submit" className={styles.submitButton}>
             Send Message
           </button>
         </form>
+
         <div className={styles.mapContainer}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160998805!2d72.741101!3d19.0821978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63c0f1f1f1f%3A0x1f1f1f1f1f1f1f1f!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1681234567890!5m2!1sen!2sin&t=k"

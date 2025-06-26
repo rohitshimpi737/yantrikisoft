@@ -2,81 +2,19 @@
 import React, { useState } from 'react';
 import styles from '@/styles/Services/WebDevelopmentLifecycle.module.css';
 
-const WebDevelopmentLifecycle: React.FC = () => {
-  return (
-    <section className={styles.section}>
-      <div className={styles.container}>
-        <h2 className={styles.heading}>Mobile App Development Process</h2>
-        <div className={styles.timelineWrapper}>
-          <div className={styles.timelineLine}></div>
-          <div className={styles.timelineItems}>
-            {phases.map((phase, index) => (
-              <TimelineItem
-                key={index}
-                phase={phase}
-                isLeftAligned={index % 2 === 0}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+interface Phase {
+  title: string;
+  description: string;
+  iconClass: string;
+  icon: string;
+  details: string[];
+}
 
-const TimelineItem: React.FC<{ phase: any; isLeftAligned: boolean }> = ({
-  phase,
-  isLeftAligned,
-}) => {
-  const [showDetails, setShowDetails] = useState(false);
-
-  return (
-    <div
-      className={`${styles.timelineItem} ${
-        isLeftAligned ? styles.leftAligned : styles.rightAligned
-      }`}
-      onMouseEnter={() => setShowDetails(true)}
-      onMouseLeave={() => setShowDetails(false)}
-    >
-      <div
-        className={`${styles.textWrapper} ${
-          isLeftAligned ? styles.textRight : styles.textLeft
-        }`}
-      >
-        <h3 className={styles.phaseTitle}>{phase.title}</h3>
-        <p className={styles.phaseDescription}>{phase.description}</p>
-      </div>
-      <div
-        className={styles.iconWrapper}
-        role="button"
-        aria-label={`More about ${phase.title}`}
-        tabIndex={0}
-      >
-        <div className={`${styles.icon} ${styles[phase.iconClass]}`}>
-          <i className={phase.icon}></i>
-        </div>
-      </div>
-      <div className={`${styles.detailsWrapper} ${showDetails ? styles.showDetails : ''}`}>
-        <div className={styles.details}>
-          <ul className={styles.detailsList}>
-            {phase.details.map((detail: string, i: number) => (
-              <li key={i} className={styles.detailItem}>
-                <i className="ri-checkbox-circle-line text-primary mr-2"></i>
-                {detail}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-};
-// Mobile App Development Process Phases
-const phases = [
+const phases: Phase[] = [
   {
     title: 'Requirement Analysis',
     description:
-      'Understanding the client\'s needs, goals, and target users to define the scope of the app project.',
+      "Understanding the client's needs, goals, and target users to define the scope of the app project.",
     iconClass: 'file-search',
     icon: 'ri-file-search-line ri-lg',
     details: [
@@ -134,5 +72,75 @@ const phases = [
     ],
   },
 ];
+
+const TimelineItem: React.FC<{ phase: Phase; isLeftAligned: boolean }> = ({
+  phase,
+  isLeftAligned,
+}) => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  return (
+    <div
+      className={`${styles.timelineItem} ${
+        isLeftAligned ? styles.leftAligned : styles.rightAligned
+      }`}
+      onMouseEnter={() => setShowDetails(true)}
+      onMouseLeave={() => setShowDetails(false)}
+    >
+      <div
+        className={`${styles.textWrapper} ${
+          isLeftAligned ? styles.textRight : styles.textLeft
+        }`}
+      >
+        <h3 className={styles.phaseTitle}>{phase.title}</h3>
+        <p className={styles.phaseDescription}>{phase.description}</p>
+      </div>
+      <div
+        className={styles.iconWrapper}
+        role="button"
+        aria-label={`More about ${phase.title}`}
+        tabIndex={0}
+      >
+        <div className={`${styles.icon} ${styles[phase.iconClass]}`}>
+          <i className={phase.icon}></i>
+        </div>
+      </div>
+      <div className={`${styles.detailsWrapper} ${showDetails ? styles.showDetails : ''}`}>
+        <div className={styles.details}>
+          <ul className={styles.detailsList}>
+            {phase.details.map((detail: string, i: number) => (
+              <li key={i} className={styles.detailItem}>
+                <i className="ri-checkbox-circle-line text-primary mr-2"></i>
+                {detail}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const WebDevelopmentLifecycle: React.FC = () => {
+  return (
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <h2 className={styles.heading}>Mobile App Development Process</h2>
+        <div className={styles.timelineWrapper}>
+          <div className={styles.timelineLine}></div>
+          <div className={styles.timelineItems}>
+            {phases.map((phase, index) => (
+              <TimelineItem
+                key={index}
+                phase={phase}
+                isLeftAligned={index % 2 === 0}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default WebDevelopmentLifecycle;

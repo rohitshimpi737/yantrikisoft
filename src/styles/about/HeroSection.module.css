@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.heroSection {
+  background-image: 
+    linear-gradient(to right, rgba(108, 158, 207, 0.85), rgba(92, 147, 206, 0.65)), /* Light theme of #0066cc */
+    url('https://readdy.ai/api/search-image?query=modern%20office%20interior%20with%20glass%20walls%20and%20workstations%2C%20natural%20lighting%2C%20minimalist%20design%2C%20tech%20company%20workspace%20with%20clean%20lines%20and%20professional%20atmosphere%2C%20high%20end%20corporate%20environment&width=1920&height=1080&seq=hero1&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  min-height: 60vh;
+  font-family: 'Rubik', sans-serif;
+  color: #1f2937;
+  position: relative;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionLabel {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #4b5563;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .sectionLabel {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
